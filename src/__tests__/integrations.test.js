@@ -16,6 +16,7 @@ afterEach(() => {
   moxios.uninstall();
 });
 
+// We pass done to make sure the code is all ran before the done function
 it('can fetch a list of comments and display them', done => {
   const wrapped = mount(
     <Root>
