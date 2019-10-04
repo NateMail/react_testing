@@ -15,7 +15,7 @@ class CommentBox extends Component {
 
   shouldNavigateAway() {
     if (!this.props.auth) {
-      console.log('I need to leave');
+      this.props.history.push('/');
     }
   }
 
